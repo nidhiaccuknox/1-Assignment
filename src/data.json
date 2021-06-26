@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "label": "Windows"
+    },
+    {
+        "id": 2,
+        "label": "macOS"
+    },
+    {
+        "id": 3,
+        "label": "Linux"
+    },
+    {
+        "id": 4,
+        "label": "Kodiak"
+    },
+    {
+        "id": 5,
+        "label": "Lion"
+    },
+    {
+        "id": 6,
+        "label": "Mavericks"
+    },
+    {
+        "id": 7,
+        "label": "Yosemite"
+    },
+    {
+        "id": 8,
+        "label": "Mojave"
+    },
+    {
+        "id": 9,
+        "label": "Catalina"
+    },
+    {
+        "id": 10,
+        "label": "Sierra"
+    }
+]

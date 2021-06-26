@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  overflow: scroll;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 14px;
+  border-radius: 5px;
+  color: rgb(92, 97, 109);
+  border: 3px solid rgb(52, 139, 219);
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.container .arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  content: " ";
+  display: block;
+  height: 0;
+  margin-top: 0.3rem;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  width: 0;
+}
+
+.container .arrow.open {
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px;
+}
+
+
+.container input {
+  width: 100%;
+  min-width: 50%;
+  border: none;
+  border-radius: 5px;
+  padding: 14px;
+  padding-left: 14px;
+  outline: none;
+}
+
+
+
+.tag {
+  display: flex;
+  align-items: center;
+  margin: 7px 0;
+  margin-right: 10px;
+  padding: 0 10px;
+  padding-right: 5px;
+  border: 1px solid rgb(221, 222, 228);
+  border-radius: 5px;
+  background-color: rgb(221, 222, 228);
+  white-space: nowrap;
+  color: rgb(92, 97, 109)
+}
+
+.tag button {
+  display: flex;
+  padding: 6px;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}

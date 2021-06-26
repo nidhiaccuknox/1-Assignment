@@ -1,0 +1,147 @@
+.dropdown {
+    position: relative;
+    color: #333;
+    cursor: default;
+  }
+
+  .dropdown .cross{
+    background-color:white;
+    display: block;
+    margin-top: 0.2rem;
+    position: absolute;
+    right: 40px;
+    top: 4px;
+    height: 20px;
+    width: 20px;
+    color: rgb(136, 133, 143);
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .vertical{
+    background-color:white;
+    display: block;
+    margin-top: 0.3rem;
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    height: 20px;
+    width: 20px;
+    border-left: 1px solid rgba(153, 148, 148, 0.8);
+  }
+  
+  .dropdown .arrow {
+    border-color: #999 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    content: " ";
+    display: block;
+    height: 0;
+    margin-top: 0.3rem;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    width: 0;
+  }
+  
+  .dropdown .arrow.open {
+    border-color: transparent transparent #999;
+    border-width: 0 5px 5px;
+  }
+  
+  .dropdown .selected-value input{
+    line-height: 1.5;
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: default;
+    outline: none;
+    padding: 8px 52px 8px 10px;
+    transition: all 200ms ease;
+    width: 100%;
+  }
+  
+  .dropdown .options {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    margin-top: -1px;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1000;
+    -webkit-overflow-scrolling: touch;
+    /* overflow-y: hidden; */
+  }
+  
+  .dropdown .options.open {
+    display: block;
+  }
+  
+  .dropdown .option {
+    box-sizing: border-box;
+    color: rgba(51, 51, 51, 0.8);
+    cursor: pointer;
+    display: block;
+    padding: 8px 10px;
+  }
+  
+  .dropdown .option.selected,
+  .dropdown .option:hover {
+    background-color: #ececf0;
+    color: #333;
+  }
+
+  .container {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    padding-left: 14px;
+    border-radius: 5px;
+    color: rgb(92, 97, 109);
+    border: 3px solid rgb(52, 139, 219);
+    overflow-y: hidden; 
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+ 
+
+  .container input {
+    width: 100%;
+    min-width: 50%;
+    border: none;
+    border-radius: 5px;
+    padding: 14px;
+    padding-left: 14px;
+    outline: none;
+  }
+  
+  .tag {
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+    margin-right: 10px;
+    padding: 0 10px;
+    padding-right: 5px;
+    border: 1px solid rgb(221, 222, 228);
+    border-radius: 5px;
+    background-color: rgb(221, 222, 228);
+    white-space: nowrap;
+    color: rgb(92, 97, 109)
+  }
+  
+  .tag button {
+    display: flex;
+    padding: 6px;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+  }
